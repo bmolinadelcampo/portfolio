@@ -1,27 +1,129 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Belén Molina del Campo</title>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.navigation_bar {
+		position: fixed;
+		width: 100%;
+		padding: 7px;
+
+		background-color: rgba(243, 209, 89, 1);
+	}
+
+	.index_button {
+		float: right;
+		padding: 0px 20px 0px 20px;
+	}
+
+	.content {
+		position: relative;
+		top: 32px;
+		z-index: -1;		
+	}
+
+	.header {
+
+		padding: 20% 15% 10% 15%;
+	}
+
+	.name {
+		margin-bottom: 50px;
+
+		font-family: "Poiret One", cursive;
+		text-align: center;
+		font-size: 800;
+		color: rgba(48, 48, 48, 1);
+	}
+
+	.introduction {
+
+		font-family: "Playfair Display", serif;
+
+
+	}
+
+	.about {
+	}
+	</style>
 </head>
 <body>
-	<h1>Belén Molina del Campo</h1>
+	<div class="navigation_bar">
+		<p class="index_button">contact</p>
+		<p class="index_button">work</p>
+		<p class="index_button">about</p>		
+	</div>
+	<div class="content">
+		<div class="header">
+			<h1 class="name">Belén Molina del Campo</h1>
+			<p class="introduction">
+				London-based aspiring iOS developer. Currently learning as much as I can at The Iron Yard.
+			</p>
+		</div>
 
-	<h2>Summary</h2>
-	<p>
-		London-based aspiring iOS developer. Currently learning as much as possible at The Iron Yard.
-	</p>
+		<div class="about">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante eros. Sed rhoncus magna dolor, a rutrum mi lobortis nec. In ornare condimentum sagittis. Curabitur eleifend dui risus, ut posuere metus finibus a. Suspendisse potenti. Ut et massa et tortor commodo convallis. Phasellus vitae rhoncus neque. Aenean vestibulum velit elit, a commodo purus hendrerit id. Aliquam sed facilisis turpis. Aenean ut ex et metus rhoncus pharetra finibus sed metus. Morbi elementum quis nisl sit amet rhoncus.
 
-	<h2>Education</h2>
-	<p>
-		<em>MSc in Industrial Engineering</em><br />
-		Comillas Pontifical University (Madrid, Spain) and Norwegian University of Science and Technology (Trondheim, Norway)
-	</p>
+				Proin enim ipsum, euismod eu lorem et, malesuada vulputate massa. Nunc in scelerisque mauris. Vivamus interdum ligula in metus egestas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra lobortis tellus, eget semper sapien dignissim aliquam. Mauris gravida auctor mauris, quis congue sem ornare ut. Donec fringilla est vel enim euismod vehicula. Sed vel sollicitudin leo, a fringilla lectus. Pellentesque condimentum molestie facilisis. Etiam dapibus, elit ut varius lacinia, diam lectus faucibus enim, tempor bibendum enim nibh eget erat. Sed vitae ornare massa.
+			</p>
+		</div>
 
-	<h2>Contact</h2>
-	<a href="mailto:bmolinadelcampo@gmail.com">Email</a> 
-	<a href="https://www.facebook.com/belen.molinadelcampo">Facebook</a>
-	<a href="https://twitter.com/bmolinadelcampo">Twitter</a>
-	<a href="https://www.instagram.com/b.ahomeforarthur/">Instagram</a>
+		<div class="work">
+			<div>
+				<img src="" alt="Project 1" class="screenshot" />
+				<h3 class="project_title">Wonderapp</h3>
+				<p class="project_description">This is an awesome app I built </p>
+			</div>
+			<div>
+				<img src="" alt="Project 2" class="screenshot" />
+				<h3 class="project_title">Happy app </h3>
+				<p class="project_description">Another awesome app I built </p>
+			</div>
+			<div>
+				<img src="" alt="Project 3" class="screenshot" />
+				<h3 class="project_title">Coolest-app</h3>
+				<p class="project_description">This is the final project I built at <a href="https://www.theironyard.com/" target="_blank">The Iron Yard</a>.</p>
+			</div>
+		</div>
 
+		<div class="contact">
+			<div>
+				<h2>Contact</h2>
+				<p>Email: <a href="mailto:bmolinadelcampo@gmail.com">Email</a></p>
+				<p>Phone: <a href="tel:+447517043420">+447517043420</p>
+			</div>
+			<div class="social_media">
+				<div>
+					<a href="https://bmolinadelcampo.github.com"><img src="" alt="Github logo" /></a>
+				</div>
+				<div>
+					<a href="https://www.facebook.com/belen.molinadelcampo"><img src="" alt="Facebook logo" /></a>
+				</div>
+				<div>
+					<a href="https://twitter.com/bmolinadelcampo"><img src="" alt="Twitter logo" /></a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/b.ahomeforarthur/"><img src="" alt="Facebook logo" /></a>
+				</div>
+				<div>
+					<a href="https://uk.linkedin.com/in/belén-molina-del-campo-16476644"><img src="" alt="LinkedIn logo" /></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>© Belén Molina del Campo - All rights reserved - 2016</p>
+		</div>
+	</div>
 </body>
 </html>
