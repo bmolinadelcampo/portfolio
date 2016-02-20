@@ -3,56 +3,131 @@
 <head>
 	<title>Belén Molina del Campo</title>
 	<meta charset="UTF-8">
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400italic,700italic,400' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 
 	* {
 		margin: 0;
 		padding: 0;
 	}
+
+	html {
+		height: 100%;
+		width: 100%;
+	}
+
+	body {
+		position: static;
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+	}
+
 	.navigation_bar {
 		position: fixed;
+		height: 26px;
 		width: 100%;
-		padding: 7px;
+		padding: 10px;
 
-		background-color: rgba(243, 209, 89, 1);
+		background-color: rgba(254, 212, 10, 1);
 	}
 
 	.index_button {
+		font-family: "Poiret One", cursive;
+		font-size: 1.2em; 
+		color: rgba(76, 76, 76, 1);
+
+
 		float: right;
 		padding: 0px 20px 0px 20px;
+		margin: 2px 0px 2px 0px;
 	}
 
 	.content {
 		position: relative;
-		top: 32px;
+		height: 100%;
+		width: 100%;
 		z-index: -1;		
 	}
 
 	.header {
+		padding: 0% 15% 0% 15%;
+		height: 100%;
+		width: 70%;
 
-		padding: 20% 15% 10% 15%;
+		background-color: rgba(254, 212, 10, 1);
+		text-align: center;
 	}
 
-	.name {
-		margin-bottom: 50px;
+	.header .name {
+		position: relative;
+		top: 40%;
+
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 7%;
+		width: 100%;
+		white-space: nowrap;
 
 		font-family: "Poiret One", cursive;
-		text-align: center;
-		font-size: 800;
-		color: rgba(48, 48, 48, 1);
+		font-size: 6vw;
+		/*font-size: 5em;
+*/		/*color: rgba(76, 76, 76, 1);*/
+		color: rgba(255, 255, 255, 1)
 	}
 
-	.introduction {
+	.header .introduction {
+		position: relative;
+		top: 40%;
+		margin-right: auto;
+		margin-left: auto;
 
-		font-family: "Playfair Display", serif;
+		font-family: "Lora", serif;
+		font-style: italic;
+		font-size: 1em;
+		line-height: 180%;
 
-
+		color: rgba(76, 76, 76, 1);
 	}
 
 	.about {
+		padding: 0% 15% 0% 15%;
+		height: 100%;
+		width: 70%;
+
+	}
+
+	.about #picture-of-me {
+		position: relative;
+		top: 15%;
+		display: block;
+
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 4%;
+
+   		max-width:221px;
+    	max-height:278px;
+	    width: auto;
+	    height: auto;	
+	}
+	.about p{
+		position: relative;
+		top: 15%;
+		margin-bottom: 2em;
+
+		font-family: "Lora", serif;
+		font-style: normal;
+		font-size: 1em;
+		line-height: 180%;
+
+		text-align: justify;
+	}
+
 	}
 	</style>
 </head>
@@ -66,15 +141,17 @@
 		<div class="header">
 			<h1 class="name">Belén Molina del Campo</h1>
 			<p class="introduction">
-				London-based aspiring iOS developer. Currently learning as much as I can at The Iron Yard.
+				London-based aspiring iOS developer. Currently boosting her coding skills at The Iron Yard. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante eros. Sed rhoncus magna dolor, a rutrum mi lobortis nec. In ornare condimentum sagittis. Curabitur eleifend dui risus, ut posuere metus finibus a. 
 			</p>
 		</div>
 
 		<div class="about">
+			<img src="https://render.bitstrips.com/render/6972338/122567835_1-s4-v1.png?scale=1" id="picture-of-me" />
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante eros. Sed rhoncus magna dolor, a rutrum mi lobortis nec. In ornare condimentum sagittis. Curabitur eleifend dui risus, ut posuere metus finibus a. Suspendisse potenti. Ut et massa et tortor commodo convallis. Phasellus vitae rhoncus neque. Aenean vestibulum velit elit, a commodo purus hendrerit id. Aliquam sed facilisis turpis. Aenean ut ex et metus rhoncus pharetra finibus sed metus. Morbi elementum quis nisl sit amet rhoncus.
-
-				Proin enim ipsum, euismod eu lorem et, malesuada vulputate massa. Nunc in scelerisque mauris. Vivamus interdum ligula in metus egestas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra lobortis tellus, eget semper sapien dignissim aliquam. Mauris gravida auctor mauris, quis congue sem ornare ut. Donec fringilla est vel enim euismod vehicula. Sed vel sollicitudin leo, a fringilla lectus. Pellentesque condimentum molestie facilisis. Etiam dapibus, elit ut varius lacinia, diam lectus faucibus enim, tempor bibendum enim nibh eget erat. Sed vitae ornare massa.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante eros. Sed rhoncus magna dolor, a rutrum mi lobortis nec. In ornare condimentum sagittis. Curabitur eleifend dui risus, ut posuere metus finibus a. Suspendisse potenti. Ut et massa et tortor commodo convallis. Phasellus vitae rhoncus neque. 			
+			</p>
+			<p>
+				Proin enim ipsum, euismod eu lorem et, malesuada vulputate massa. Nunc in scelerisque mauris. Vivamus interdum ligula in metus egestas sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra lobortis tellus, eget semper sapien dignissim aliquam.  
 			</p>
 		</div>
 
