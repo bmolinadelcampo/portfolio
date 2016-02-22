@@ -41,7 +41,6 @@ body {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 7%;
-        width: 100%;
         white-space: nowrap;
         font-family: "Poiret One";
         font-size: 6vw;
@@ -87,7 +86,6 @@ body {
       padding-right: 10vw;
       padding-bottom: 20vh;
       padding-left: 10vw;
-      width: 80vw;
       overflow: hidden; }
       body .content .work h2 {
         font-family: "Poiret One";
@@ -96,12 +94,12 @@ body {
         text-align: center;
         text-transform: uppercase;
         padding-top: 70px;
-        margin-top: 10vh;
         margin-bottom: 15vh; }
       body .content .work .project-block {
         display: block;
         float: left;
-        width: 33.33%; }
+        width: 33.33333%;
+        margin: auto; }
         body .content .work .project-block .screenshot {
           position: relative;
           display: block;
@@ -147,7 +145,6 @@ body {
       background-color: #4c4c4c; }
       body .content .contact .block_inside_contact {
         float: left;
-        height: 100%;
         width: 50%; }
         body .content .contact .block_inside_contact h2 {
           margin-top: 0.4em;

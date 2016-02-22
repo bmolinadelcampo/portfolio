@@ -1,10 +1,14 @@
+$number-of-columns: 3;
+$image-width: 203px;
+$image-height: 362px; 
+
+
 .work {
 	display: block;
 	padding-top: 0px;
 	padding-right: 10vw;
 	padding-bottom: 20vh;
 	padding-left: 10vw;
-	width: 80vw;
 
 	overflow: hidden;
 
@@ -16,20 +20,20 @@
 		text-align: center;
 		text-transform: uppercase;
 		padding-top: 70px;
-		margin-top: 10vh;
 		margin-bottom: 15vh;
 	} 
 
 	.project-block {
 		display: block;
 		float: left;
-		width: 33.33%;
+		width: 1 / $number-of-columns * 100%;
+		margin: auto;
 	
 		.screenshot {
 			position: relative;
-			display: block;
-			max-width:203px;
-	    	max-height:362px;
+			display:block; 
+			max-width: $image-width;
+	    	max-height: $image-height;
 		    width: auto;
 		    height: auto;
 		    margin: auto;
