@@ -1,0 +1,30 @@
+@import 'fonts-and-colours';
+
+$navigation-bar-height: 26px;
+
+
+.navigation_bar {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: $navigation-bar-height;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 10px;		
+	background-color: $yellow;
+	
+
+	.index_button {
+		font-family: $titles;
+		font-size: 1.2em; 
+		color: $gray;
+		float: right;
+		padding: 0px 20px 0px 20px;
+		margin: 2px 0px 2px 0px;
+	}
+
+	a:hover {
+		color: $white;
+	}
+}

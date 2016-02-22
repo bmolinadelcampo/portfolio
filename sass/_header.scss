@@ -1,0 +1,37 @@
+.header {
+	padding-top: 40vh;
+	padding-right: 15vw;
+	padding-bottom: 20vh;
+	padding-left: 15vw;
+	min-height: 40vh;
+
+	background-color: $yellow;
+	
+	text-align: center;
+
+	.name {
+
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 7%;
+		width: 100%;
+		white-space: nowrap;
+
+		font-family: $titles;
+		font-size: 6vw;
+
+		color: $white;
+	}
+
+	.introduction {
+		margin-right: auto;
+		margin-left: auto;
+
+		font-family: $body;
+		font-style: italic;
+		font-size: 1em;
+		line-height: 180%;
+
+		color: $gray;
+	}
+}

@@ -1,0 +1,39 @@
+.about {
+	padding-top: 10vh;
+	padding-right: 15vw;
+	padding-bottom: 20vh;
+	padding-left: 15vw;
+	min-height: 70vh;
+
+	min-height: 100%;
+	width: 70%;
+
+
+	#picture {
+		display: block;
+
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 2.7em;
+
+   		max-width:221px;
+    	max-height:278px;
+	    width: auto;
+	    height: auto;	
+	}
+
+	p{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2em;
+
+		font-family: $body;
+		font-style: normal;
+		font-size: 1em;
+		line-height: 180%;
+
+		color: $gray;
+
+		text-align: justify;
+	}
+}
