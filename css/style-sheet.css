@@ -9,22 +9,25 @@ body {
     text-decoration: inherit; }
 
 .navigation_bar {
+  overflow: hidden;
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 26px;
-  padding-top: 15px;
-  padding-right: 20px;
-  padding-bottom: 15px;
-  padding-left: 10px;
   background-color: #fed40a; }
+  @media (max-width: 767px) {
+    .navigation_bar {
+      padding-top: 1.5vh;
+      padding-right: 6vw;
+      padding-bottom: 1.5vh;
+      padding-left: 1vw; } }
   .navigation_bar .index_button {
     font-family: "Poiret One";
-    font-size: 1.2em;
     color: #4c4c4c;
-    float: right;
-    padding: 0px 20px 0px 20px;
-    margin: 2px 0px 2px 0px; }
+    float: right; }
+    @media (max-width: 767px) {
+      .navigation_bar .index_button {
+        padding: 0px 3vw 0px 3vw;
+        font-size: 2.8vh; } }
   .navigation_bar a:hover {
     color: white; }
 
@@ -33,12 +36,10 @@ body {
   .content .header {
     background-color: #fed40a;
     text-align: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .content .header {
         padding-top: 40vh;
-        padding-right: 15vw;
         padding-bottom: 20vh;
-        padding-left: 15vw;
         min-height: 40vh; } }
     @media (min-width: 992px) and (max-width: 1199px) {
       .content .header {
@@ -48,21 +49,31 @@ body {
         padding-left: 15vw;
         min-height: 40vh; } }
     .content .header .name {
-      margin-right: auto;
-      margin-left: auto;
-      margin-bottom: 7%;
       white-space: nowrap;
       font-family: "Poiret One";
-      font-size: 6vw;
-      color: white; }
+      color: white;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto; }
+      @media (max-width: 767px) {
+        .content .header .name {
+          padding-right: 6vw;
+          padding-left: 6vw;
+          margin-bottom: 20vh;
+          font-size: 5vh; } }
     .content .header .introduction {
       margin-right: auto;
       margin-left: auto;
       font-family: "Lora", serif;
       font-style: italic;
-      font-size: 1em;
-      line-height: 180%;
       color: #4c4c4c; }
+      @media (max-width: 767px) {
+        .content .header .introduction {
+          padding-right: 8vw;
+          padding-left: 8vw;
+          margin-bottom: 7%;
+          font-size: 2.5vh;
+          line-height: 180%; } }
   .content .about {
     padding-top: 10vh;
     padding-right: 15vw;
@@ -157,7 +168,7 @@ body {
     background-color: #4c4c4c; }
     .content .contact .block_inside_contact {
       overflow: hidden; }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .content .contact .block_inside_contact {
           margin: 0 3vw;
           padding: 5vh 0; } }
@@ -172,7 +183,7 @@ body {
         font-size: 4vh;
         color: white;
         text-align: left; }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           .content .contact .block_inside_contact h2 {
             margin-top: 3vh;
             font-size: 4vh;
@@ -181,7 +192,7 @@ body {
         font-family: "Poiret One";
         font-style: normal;
         color: white; }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           .content .contact .block_inside_contact .contact_information {
             font-size: 3.4vh;
             line-height: 180%; } }
@@ -192,7 +203,7 @@ body {
         color: #fed40a;
         width: 20%;
         text-align: center; }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           .content .contact .block_inside_contact .social_media {
             width: 18.8vw;
             margin-bottom: auto; } }

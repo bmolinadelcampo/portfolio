@@ -15,7 +15,7 @@
 
 		overflow: hidden;
 
-		@media (max-width: 768px) {
+		@media (max-width: 767px) {
 			margin: 0 3vw;
 			padding: 5vh 0;
 
@@ -31,7 +31,7 @@
 
 		h2 {
 
-			@media (max-width: 768px) {
+			@media (max-width: 767px) {
 				margin-top: 3vh;
 				font-size: 4vh;
 				line-height: 180%;
@@ -49,7 +49,7 @@
 		}
 
 		.contact_information {
-			@media (max-width: 768px) {
+			@media (max-width: 767px) {
 				font-size: 3.4vh;
 				line-height: 180%;
 			}
@@ -63,7 +63,7 @@
 
 		.social_media {
 
-			@media (max-width: 768px) {
+			@media (max-width: 767px) {
 				width: 18.8vw;
 				margin-bottom: auto;
 			}

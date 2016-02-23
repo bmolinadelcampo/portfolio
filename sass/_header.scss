@@ -3,11 +3,9 @@
 	background-color: $yellow;
 	text-align: center;
 
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		padding-top: 40vh;
-		padding-right: 15vw;
 		padding-bottom: 20vh;
-		padding-left: 15vw;
 		min-height: 40vh;
 	}
 
@@ -24,25 +22,37 @@
 
 	.name {
 
+		white-space: nowrap;
+		font-family: $titles;
+		color: $white;
+		text-align: center;
+
 		margin-right: auto;
 		margin-left: auto;
-		margin-bottom: 7%;
-		white-space: nowrap;
 
-		font-family: $titles;
-		font-size: 6vw;
-
-		color: $white;
+		@media (max-width: 767px) {
+			padding-right: 6vw;
+			padding-left: 6vw;
+			margin-bottom: 20vh;
+			font-size: 5vh;
+		}
 	}
 
 	.introduction {
+
+		@media (max-width: 767px) {
+			padding-right: 8vw;
+			padding-left: 8vw;
+			margin-bottom: 7%;
+			font-size: 2.5vh;
+			line-height: 180%;
+		}
+
 		margin-right: auto;
 		margin-left: auto;
 
 		font-family: $body;
 		font-style: italic;
-		font-size: 1em;
-		line-height: 180%;
 
 		color: $gray;
 	}
