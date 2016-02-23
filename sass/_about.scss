@@ -1,12 +1,13 @@
 .about {
-	padding-top: 10vh;
-	padding-right: 15vw;
-	padding-bottom: 20vh;
-	padding-left: 15vw;
-	min-height: 70vh;
+	@media (max-width: 767px) {
+		padding-top: 10vh;
+		padding-right: 15vw;
+		padding-bottom: 10vh;
+		padding-left: 15vw;
+		min-height: 70vh;
+	}
 
 	min-height: 100%;
-	width: 70%;
 
 
 	#picture {
@@ -14,7 +15,7 @@
 
 		margin-right: auto;
 		margin-left: auto;
-		margin-bottom: 2.7em;
+		margin-bottom: 7vh;
 
    		max-width:221px;
     	max-height:278px;
@@ -25,15 +26,18 @@
 	p{
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 2em;
 
 		font-family: $body;
 		font-style: normal;
-		font-size: 1em;
-		line-height: 180%;
+		
 
 		color: $gray;
 
 		text-align: justify;
+
+		@media (max-width: 767px) {
+			font-size: 2.5vh;
+			line-height: 180%;
+		}
 	}
 }

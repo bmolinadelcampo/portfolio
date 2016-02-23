@@ -33,12 +33,12 @@
 
 			@media (max-width: 767px) {
 				margin-top: 3vh;
+				margin-bottom: 3vh;
 				font-size: 4vh;
 				line-height: 180%;
 			}
 
-			margin-top: 0.4em;
-			margin-bottom: 0.6em;
+			
 
 			font-family: $titles;
 			font-size: 4vh;
@@ -65,14 +65,15 @@
 
 			@media (max-width: 767px) {
 				width: 18.8vw;
-				margin-bottom: auto;
+				margin-bottom: 2vh;
+				font-size: 5vh;
 			}
 
 
 			float: left;
 			margin-bottom: auto;
 
-			font-size: 3.4vh;
+			
 
 			color: $yellow;
 			width: 20%;

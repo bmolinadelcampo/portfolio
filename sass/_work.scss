@@ -5,27 +5,30 @@ $image-height: 362px;
 
 .work {
 	display: block;
-	padding-right: 10vw;
-	padding-bottom: 20vh;
-	padding-left: 10vw;
 
-	overflow-x: auto;
+	@media (max-width: 767px) {
+		padding: 10vh 10vw 20vh 10vw;
+	}
+
 	overflow-y: hidden;
 
 	h2 {
 		font-family: $titles;
-		font-size: 4vw;
 		color: $gray;
-
 		text-align: center;
 		text-transform: uppercase;
-		padding-top: 70px;
-		margin-bottom: 15vh;
+
+		@media (max-width: 767px) {
+			padding-bottom: 8vh;
+			font-size: 4vh;
+		}
 	} 
 
 	.project-block {
+		margin: auto;
 
 		@media (max-width: 767px) {
+			padding: 3vh 2vw;
 		}
 
 		@media (min-width: 992px) and (max-width: 1199px){
@@ -33,9 +36,6 @@ $image-height: 362px;
 			width: 1 / $number-of-columns * 100%;
 		}
 
-		
-		margin: auto;
-	
 		.screenshot {
 			position: relative;
 			display:block; 
@@ -47,17 +47,15 @@ $image-height: 362px;
 		}
 
 		.project_title {
-			position: relative;
-
 			font-family: $titles;
-			font-size: 1.3em;
-
-			margin-top: 10%;
-			margin-bottom: 3%;
-
 			color: $gray;
-
 			text-align: center;
+
+			@media (max-width: 767px) {
+				font-size: 3.2vh;
+				margin-top: 3vh;
+				margin-bottom: 2vh;
+			}	
 		}
 
 		hr {
@@ -68,23 +66,22 @@ $image-height: 362px;
 			border: 0;
 			margin-right: auto;
 			margin-left: auto;
-			margin-bottom: 10%;
+			margin-bottom: 2vh;
 		}
 
 		.project_description {
 			font-family: $body;
 			font-style: normal;
-			font-size: 1em;
-			line-height: 180%;
-
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 2em;
-			width: 80%;
-
 			color: $gray;
-
 			text-align: center;
+
+			@media (max-width: 767px) {
+			font-size: 2.5vh;
+			line-height: 180%;
+			width: 80vw;
+			}
 		}
 	}
 }
