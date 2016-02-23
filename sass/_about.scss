@@ -7,8 +7,16 @@
 		min-height: 70vh;
 	}
 
-	min-height: 100%;
+	@media (min-width: 768px) and (max-width: 991px) {
+		padding: 8vh 15vw 8vh 15vw;
+		padding-top: 10vh;
+		padding-right: 10vw;
+		padding-bottom: 10vh;
+		padding-left: 10vw;
+		min-height: 80vh;
+	}
 
+	min-height: 100%;
 
 	#picture {
 		display: block;
@@ -29,15 +37,18 @@
 
 		font-family: $body;
 		font-style: normal;
-		
-
 		color: $gray;
-
 		text-align: justify;
 
 		@media (max-width: 767px) {
 			font-size: 2.5vh;
 			line-height: 180%;
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			font-size: 2.5vh;
+			line-height: 180%;
+			margin-bottom: 2vh;
 		}
 	}
 }

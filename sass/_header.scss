@@ -1,9 +1,14 @@
 .header {
-
 	background-color: $yellow;
 	text-align: center;
 
 	@media (max-width: 767px) {
+		padding-top: 40vh;
+		padding-bottom: 20vh;
+		min-height: 40vh;
+	}
+
+	@media (min-width: 768px) and (max-width: 991px){
 		padding-top: 40vh;
 		padding-bottom: 20vh;
 		min-height: 40vh;
@@ -17,11 +22,7 @@
 		min-height: 40vh;
 	}
 
-
-
-
 	.name {
-
 		white-space: nowrap;
 		font-family: $titles;
 		color: $white;
@@ -36,11 +37,25 @@
 			margin-bottom: 7vh;
 			font-size: 4.5vh;
 		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			padding-right: 4vw;
+			padding-left: 4vw;
+			margin-bottom: 7vh;
+			font-size: 5.5vh;
+		}
 	}
 
 	.introduction {
 
 		@media (max-width: 767px) {
+			padding-right: 8vw;
+			padding-left: 8vw;
+			font-size: 2.5vh;
+			line-height: 180%;
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
 			padding-right: 8vw;
 			padding-left: 8vw;
 			font-size: 2.5vh;

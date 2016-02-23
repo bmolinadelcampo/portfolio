@@ -1,33 +1,26 @@
-.contact {
-	/*padding: 0% 6% 0% 10%;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	min-height: 220px;
-	min-width: 650px;*/
-	
+.contact {	
 	overflow: scroll;
-
-
 	background-color: $gray;
 	
-
 	.block_inside_contact {
-
 		overflow: hidden;
 
 		@media (max-width: 767px) {
 			margin: 0 3vw;
 			padding: 5vh 0;
+		}
 
+		@media (min-width: 768px) and (max-width: 991px) {
+			box-sizing: border-box;
+			padding: 5vh 2vw 5vh 1vw;
+			float: left;
+			width: 50%;
 		}
 
 		@media (min-width: 992px) and (max-width: 1199px){
 			float: left;
 			width: 50vw;
 		}
-
-
-		
 
 		h2 {
 
@@ -38,7 +31,18 @@
 				line-height: 180%;
 			}
 
-			
+			@media (min-width: 768px) and (max-width: 991px) {
+				font-size: 4vh;
+				line-height: 180%;
+			}
+
+			@media (min-width: 992px) and (max-width: 1199px) {
+				padding: 3vh 2vw;
+				margin-top: 3vh;
+				margin-bottom: 3vh;
+				font-size: 4vh;
+				line-height: 180%;
+			}
 
 			font-family: $titles;
 			font-size: 4vh;
@@ -49,19 +53,33 @@
 		}
 
 		.contact_information {
+			font-family: $titles;
+			font-style: normal;
+			color: $white; 
+
 			@media (max-width: 767px) {
 				font-size: 3.4vh;
 				line-height: 180%;
 			}
 
-			
-			font-family: $titles;
-			font-style: normal;
-			
-			color: $white; 
+			@media (min-width: 768px) and (max-width: 991px) {
+				font-size: 2.2vh;
+				line-height: 180%;
+			}
+
+			@media (min-width: 992px) and (max-width: 1199px) {
+				font-size: 3.4vh;
+				line-height: 180%;
+			}
+
 		}
 
 		.social_media {
+			float: left;
+			margin-bottom: auto;
+			color: $yellow;
+			width: 20%;
+			text-align: center;
 
 			@media (max-width: 767px) {
 				width: 18.8vw;
@@ -69,16 +87,17 @@
 				font-size: 5vh;
 			}
 
+			@media (min-width: 768px) and (max-width: 991px) {
+				width: 18.8%;
+				margin: 7vh 0 7vh 0;
+				font-size: 5vh;
+			}
 
-			float: left;
-			margin-bottom: auto;
-
-			
-
-			color: $yellow;
-			width: 20%;
-
-			text-align: center;
+			@media (min-width: 992px) and (max-width: 1199px) {
+				width: 18.8vw;
+				margin-bottom: 2vh;
+				font-size: 2vh;
+			}
 		}
 	}
 }
