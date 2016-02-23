@@ -3,7 +3,6 @@
   padding: 0; }
 
 body {
-  width: 100%;
   font-size: 100%; }
   body a {
     color: inherit;
@@ -32,13 +31,22 @@ body {
 .content {
   width: 100%; }
   .content .header {
-    padding-top: 40vh;
-    padding-right: 15vw;
-    padding-bottom: 20vh;
-    padding-left: 15vw;
-    min-height: 40vh;
     background-color: #fed40a;
     text-align: center; }
+    @media (max-width: 768px) {
+      .content .header {
+        padding-top: 40vh;
+        padding-right: 15vw;
+        padding-bottom: 20vh;
+        padding-left: 15vw;
+        min-height: 40vh; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .content .header {
+        padding-top: 40vh;
+        padding-right: 15vw;
+        padding-bottom: 20vh;
+        padding-left: 15vw;
+        min-height: 40vh; } }
     .content .header .name {
       margin-right: auto;
       margin-left: auto;
@@ -98,10 +106,11 @@ body {
       padding-top: 70px;
       margin-bottom: 15vh; }
     .content .work .project-block {
-      display: block;
-      float: left;
-      width: 33.33333%;
       margin: auto; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .content .work .project-block {
+          float: left;
+          width: 33.33333%; } }
       .content .work .project-block .screenshot {
         position: relative;
         display: block;
@@ -139,37 +148,54 @@ body {
         color: #4c4c4c;
         text-align: center; }
   .content .contact {
-    padding: 0% 6% 0% 10%;
+    /*padding: 0% 6% 0% 10%;
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 220px;
-    min-width: 650px;
+    min-width: 650px;*/
+    overflow: scroll;
     background-color: #4c4c4c; }
     .content .contact .block_inside_contact {
-      float: left;
-      width: 50%; }
+      overflow: hidden; }
+      @media (max-width: 768px) {
+        .content .contact .block_inside_contact {
+          margin: 0 3vw;
+          padding: 5vh 0; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .content .contact .block_inside_contact {
+          float: left;
+          width: 50vw; } }
       .content .contact .block_inside_contact h2 {
         margin-top: 0.4em;
         margin-bottom: 0.6em;
         font-family: "Poiret One";
-        font-size: 4vw;
+        font-size: 4vh;
         color: white;
         text-align: left; }
+        @media (max-width: 768px) {
+          .content .contact .block_inside_contact h2 {
+            margin-top: 3vh;
+            font-size: 4vh;
+            line-height: 180%; } }
       .content .contact .block_inside_contact .contact_information {
-        margin-bottom: 1em;
         font-family: "Poiret One";
         font-style: normal;
-        font-size: 1.3em;
-        line-height: 180%;
         color: white; }
+        @media (max-width: 768px) {
+          .content .contact .block_inside_contact .contact_information {
+            font-size: 3.4vh;
+            line-height: 180%; } }
       .content .contact .block_inside_contact .social_media {
         float: left;
-        margin-top: 1.8em;
         margin-bottom: auto;
-        font-size: 2.5em;
-        width: 20%;
+        font-size: 3.4vh;
         color: #fed40a;
+        width: 20%;
         text-align: center; }
+        @media (max-width: 768px) {
+          .content .contact .block_inside_contact .social_media {
+            width: 18.8vw;
+            margin-bottom: auto; } }
   .content .footer {
     padding: 0% 4% 0% 4%;
     font-family: "Poiret One";

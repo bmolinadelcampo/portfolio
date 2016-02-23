@@ -24,9 +24,16 @@ $image-height: 362px;
 	} 
 
 	.project-block {
-		display: block;
-		float: left;
-		width: 1 / $number-of-columns * 100%;
+
+		@media (max-width: 768px) {
+		}
+
+		@media (min-width: 992px) and (max-width: 1199px){
+			float: left;
+			width: 1 / $number-of-columns * 100%;
+		}
+
+		
 		margin: auto;
 	
 		.screenshot {
