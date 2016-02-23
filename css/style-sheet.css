@@ -8,171 +8,173 @@ body {
   body a {
     color: inherit;
     text-decoration: inherit; }
-  body .navigation_bar {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 26px;
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    background-color: #fed40a; }
-    body .navigation_bar .index_button {
+
+.navigation_bar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 26px;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  background-color: #fed40a; }
+  .navigation_bar .index_button {
+    font-family: "Poiret One";
+    font-size: 1.2em;
+    color: #4c4c4c;
+    float: right;
+    padding: 0px 20px 0px 20px;
+    margin: 2px 0px 2px 0px; }
+  .navigation_bar a:hover {
+    color: white; }
+
+.content {
+  width: 100%; }
+  .content .header {
+    padding-top: 40vh;
+    padding-right: 15vw;
+    padding-bottom: 20vh;
+    padding-left: 15vw;
+    min-height: 40vh;
+    background-color: #fed40a;
+    text-align: center; }
+    .content .header .name {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 7%;
+      white-space: nowrap;
       font-family: "Poiret One";
-      font-size: 1.2em;
-      color: #4c4c4c;
-      float: right;
-      padding: 0px 20px 0px 20px;
-      margin: 2px 0px 2px 0px; }
-    body .navigation_bar a:hover {
+      font-size: 6vw;
       color: white; }
-  body .content {
-    width: 100%; }
-    body .content .header {
-      padding-top: 40vh;
-      padding-right: 15vw;
-      padding-bottom: 20vh;
-      padding-left: 15vw;
-      min-height: 40vh;
-      background-color: #fed40a;
-      text-align: center; }
-      body .content .header .name {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 7%;
-        white-space: nowrap;
-        font-family: "Poiret One";
-        font-size: 6vw;
-        color: white; }
-      body .content .header .introduction {
-        margin-right: auto;
-        margin-left: auto;
-        font-family: "Lora", serif;
-        font-style: italic;
-        font-size: 1em;
-        line-height: 180%;
-        color: #4c4c4c; }
-    body .content .about {
-      padding-top: 10vh;
-      padding-right: 15vw;
-      padding-bottom: 20vh;
-      padding-left: 15vw;
-      min-height: 70vh;
-      min-height: 100%;
-      width: 70%; }
-      body .content .about #picture {
+    .content .header .introduction {
+      margin-right: auto;
+      margin-left: auto;
+      font-family: "Lora", serif;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 180%;
+      color: #4c4c4c; }
+  .content .about {
+    padding-top: 10vh;
+    padding-right: 15vw;
+    padding-bottom: 20vh;
+    padding-left: 15vw;
+    min-height: 70vh;
+    min-height: 100%;
+    width: 70%; }
+    .content .about #picture {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 2.7em;
+      max-width: 221px;
+      max-height: 278px;
+      width: auto;
+      height: auto; }
+    .content .about p {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2em;
+      font-family: "Lora", serif;
+      font-style: normal;
+      font-size: 1em;
+      line-height: 180%;
+      color: #4c4c4c;
+      text-align: justify; }
+  .content .work {
+    display: block;
+    padding-right: 10vw;
+    padding-bottom: 20vh;
+    padding-left: 10vw;
+    overflow-x: auto;
+    overflow-y: hidden; }
+    .content .work h2 {
+      font-family: "Poiret One";
+      font-size: 4vw;
+      color: #4c4c4c;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 70px;
+      margin-bottom: 15vh; }
+    .content .work .project-block {
+      display: block;
+      float: left;
+      width: 33.33333%;
+      margin: auto; }
+      .content .work .project-block .screenshot {
+        position: relative;
         display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 2.7em;
-        max-width: 221px;
-        max-height: 278px;
+        max-width: 203px;
+        max-height: 362px;
         width: auto;
-        height: auto; }
-      body .content .about p {
-        margin-left: auto;
+        height: auto;
+        margin: auto; }
+      .content .work .project-block .project_title {
+        position: relative;
+        font-family: "Poiret One";
+        font-size: 1.3em;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        color: #4c4c4c;
+        text-align: center; }
+      .content .work .project-block hr {
+        width: 80%;
+        height: 4px;
+        color: #fed40a;
+        background-color: #fed40a;
+        border: 0;
         margin-right: auto;
-        margin-bottom: 2em;
+        margin-left: auto;
+        margin-bottom: 10%; }
+      .content .work .project-block .project_description {
         font-family: "Lora", serif;
         font-style: normal;
         font-size: 1em;
         line-height: 180%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        width: 80%;
         color: #4c4c4c;
-        text-align: justify; }
-    body .content .work {
-      display: block;
-      padding-top: 0px;
-      padding-right: 10vw;
-      padding-bottom: 20vh;
-      padding-left: 10vw;
-      overflow: hidden; }
-      body .content .work h2 {
+        text-align: center; }
+  .content .contact {
+    padding: 0% 6% 0% 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 220px;
+    min-width: 650px;
+    background-color: #4c4c4c; }
+    .content .contact .block_inside_contact {
+      float: left;
+      width: 50%; }
+      .content .contact .block_inside_contact h2 {
+        margin-top: 0.4em;
+        margin-bottom: 0.6em;
         font-family: "Poiret One";
         font-size: 4vw;
-        color: #4c4c4c;
-        text-align: center;
-        text-transform: uppercase;
-        padding-top: 70px;
-        margin-bottom: 15vh; }
-      body .content .work .project-block {
-        display: block;
+        color: white;
+        text-align: left; }
+      .content .contact .block_inside_contact .contact_information {
+        margin-bottom: 1em;
+        font-family: "Poiret One";
+        font-style: normal;
+        font-size: 1.3em;
+        line-height: 180%;
+        color: white; }
+      .content .contact .block_inside_contact .social_media {
         float: left;
-        width: 33.33333%;
-        margin: auto; }
-        body .content .work .project-block .screenshot {
-          position: relative;
-          display: block;
-          max-width: 203px;
-          max-height: 362px;
-          width: auto;
-          height: auto;
-          margin: auto; }
-        body .content .work .project-block .project_title {
-          position: relative;
-          font-family: "Poiret One";
-          font-size: 1.3em;
-          margin-top: 10%;
-          margin-bottom: 3%;
-          color: #4c4c4c;
-          text-align: center; }
-        body .content .work .project-block hr {
-          width: 80%;
-          height: 4px;
-          color: #fed40a;
-          background-color: #fed40a;
-          border: 0;
-          margin-right: auto;
-          margin-left: auto;
-          margin-bottom: 10%; }
-        body .content .work .project-block .project_description {
-          font-family: "Lora", serif;
-          font-style: normal;
-          font-size: 1em;
-          line-height: 180%;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 2em;
-          width: 80%;
-          color: #4c4c4c;
-          text-align: center; }
-    body .content .contact {
-      padding: 0% 6% 0% 10%;
-      padding-top: 2em;
-      padding-bottom: 2em;
-      min-height: 220px;
-      min-width: 650px;
-      background-color: #4c4c4c; }
-      body .content .contact .block_inside_contact {
-        float: left;
-        width: 50%; }
-        body .content .contact .block_inside_contact h2 {
-          margin-top: 0.4em;
-          margin-bottom: 0.6em;
-          font-family: "Poiret One";
-          font-size: 4vw;
-          color: white;
-          text-align: left; }
-        body .content .contact .block_inside_contact .contact_information {
-          margin-bottom: 1em;
-          font-family: "Poiret One";
-          font-style: normal;
-          font-size: 1.3em;
-          line-height: 180%;
-          color: white; }
-        body .content .contact .block_inside_contact .social_media {
-          float: left;
-          margin-top: 1.8em;
-          margin-bottom: auto;
-          font-size: 2.5em;
-          width: 20%;
-          color: #fed40a;
-          text-align: center; }
-    body .content .footer {
-      padding: 0% 4% 0% 4%;
-      font-family: "Poiret One";
-      color: white;
-      background-color: #4c4c4c;
-      text-align: center; }
+        margin-top: 1.8em;
+        margin-bottom: auto;
+        font-size: 2.5em;
+        width: 20%;
+        color: #fed40a;
+        text-align: center; }
+  .content .footer {
+    padding: 0% 4% 0% 4%;
+    font-family: "Poiret One";
+    color: white;
+    background-color: #4c4c4c;
+    text-align: center; }
 
 /*# sourceMappingURL=style-sheet.css.map */

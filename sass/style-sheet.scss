@@ -1,24 +1,15 @@
 @import 'reset';
 
+@import 'global';
 
-body {
+@import 'navigation-bar';
+
+.content {
 	width: 100%;
-	font-size: 100%;
 
-	a {
-		color: inherit;
-		text-decoration: inherit;
-	}
-
-	@import 'navigation-bar';
-
-	.content {
-		width: 100%;
-
-		@import 'header';
-		@import 'about';
-		@import 'work';
-		@import 'contact';
-		@import 'footer';
-	}
+	@import 'header';
+	@import 'about';
+	@import 'work';
+	@import 'contact';
+	@import 'footer';
 }
