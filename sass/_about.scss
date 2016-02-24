@@ -1,22 +1,18 @@
 .about {
 	@media (max-width: 767px) {
-		padding-top: 10vh;
-		padding-right: 15vw;
-		padding-bottom: 10vh;
-		padding-left: 15vw;
+		padding: 10vh 15vw 10vh 15vw;
 		min-height: 70vh;
 	}
 
 	@media (min-width: 768px) and (max-width: 991px) {
 		padding: 8vh 15vw 8vh 15vw;
-		padding-top: 10vh;
-		padding-right: 10vw;
-		padding-bottom: 10vh;
-		padding-left: 10vw;
-		min-height: 80vh;
+		min-height: 84vh;
 	}
 
-	min-height: 100%;
+	@media (min-width: 992px) {
+		padding: 8vh 10vw 8vh 10vw;
+		min-height: 84vh;
+	}
 
 	#picture {
 		display: block;
@@ -32,9 +28,6 @@
 	}
 
 	p{
-		margin-left: auto;
-		margin-right: auto;
-
 		font-family: $body;
 		font-style: normal;
 		color: $gray;
@@ -50,5 +43,11 @@
 			line-height: 180%;
 			margin-bottom: 2vh;
 		}
+
+		@media (min-width: 992px) {
+			font-size: 2.5vh;
+			line-height: 180%;
+			margin-bottom: 2vh;
+	}
 	}
 }

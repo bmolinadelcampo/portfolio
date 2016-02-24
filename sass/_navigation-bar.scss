@@ -1,9 +1,6 @@
 @import 'fonts-and-colours';
 
-
-
 .navigation_bar {
-
 	overflow: hidden;
 	position: fixed;
 	z-index: 1;
@@ -11,14 +8,15 @@
 	background-color: $yellow;
 
 	@media (max-width: 767px) {
-		padding-top: 1.5vh;
-		padding-right: 6vw;
-		padding-bottom: 1.5vh;
-		padding-left: 1vw;	
+		padding: 1.5vh 0 1.5vh 0;
 	}
 
 	@media (min-width: 768px) and (max-width: 991px){
-		padding: 1vh 6vw 1vh 1vw;
+		padding: 1vh 0vw 1vh 0vw;
+	}
+
+	@media (min-width: 992px) {
+		padding: 2vh 0vw 2vh 0vw;
 	}
 	
 	.index_button {
@@ -33,11 +31,15 @@
 
 		@media (min-width: 768px) and (max-width: 991px) {
 			padding: 0 3vw 0 3vw;
-			font-size: 2vh; 
+			font-size: 2.8vh; 
 		}
-	}
 
-	a:hover {
-		color: $white;
+		@media (min-width: 992px) {
+			padding: 0 2.5vw 0 2.5vw;
+			font-size: 3.2vh; 
+			a:hover {
+			color: $white;
+			}
+		}
 	}
 }

@@ -17,13 +17,14 @@
 			width: 50%;
 		}
 
-		@media (min-width: 992px) and (max-width: 1199px){
+		@media (min-width: 992px) {
+			box-sizing: border-box;
+			padding: 5vh 2vw 5vh 5vw;
 			float: left;
 			width: 50vw;
 		}
 
 		h2 {
-
 			@media (max-width: 767px) {
 				margin-top: 3vh;
 				margin-bottom: 3vh;
@@ -36,10 +37,7 @@
 				line-height: 180%;
 			}
 
-			@media (min-width: 992px) and (max-width: 1199px) {
-				padding: 3vh 2vw;
-				margin-top: 3vh;
-				margin-bottom: 3vh;
+			@media (min-width: 992px) {
 				font-size: 4vh;
 				line-height: 180%;
 			}
@@ -67,11 +65,10 @@
 				line-height: 180%;
 			}
 
-			@media (min-width: 992px) and (max-width: 1199px) {
+			@media (min-width: 992px) {
 				font-size: 3.4vh;
 				line-height: 180%;
 			}
-
 		}
 
 		.social_media {
@@ -93,10 +90,10 @@
 				font-size: 5vh;
 			}
 
-			@media (min-width: 992px) and (max-width: 1199px) {
-				width: 18.8vw;
-				margin-bottom: 2vh;
-				font-size: 2vh;
+			@media (min-width: 992px) {
+				width: 18.8%;
+				margin: 7vh 0 7vh 0;
+				font-size: 5vh;
 			}
 		}
 	}
