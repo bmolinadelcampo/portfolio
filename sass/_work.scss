@@ -28,47 +28,79 @@ $image-height: 362px;
 		font-size: 4vh;
 	} 
 
-	.project-block {
-		margin: auto;
-
-		@media (max-width: 767px) {
-			padding: 3vh 2vw;
-		}
-
+	.projects {
 		@media (min-width: 768px) and (max-width: 991px) {
-			box-sizing: border-box;
-			padding: 3vh 2vw;
-			float: left;
-			width: 1 / 2 * 100%;
-			overflow: hidden;
-		}
+			display: -webkit-flex;
+			display: flex;
+
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			
+			-webkit-align-items: flex-start;
+	  		align-items: flex-start;
+
+	  		-webkit-align-content: stretch;
+	  		align-content: stretch;
+	  	}
 
 		@media (min-width: 992px) {
-			box-sizing: border-box;
-			padding: 3vh 2vw;
-			float: left;
-			width: 1 / $number-of-columns * 100%;
-			overflow: hidden;
+			display: -webkit-flex;
+			display: flex;
+
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			
+			-webkit-align-items: flex-start;
+	  		align-items: flex-start;
+
+	  		-webkit-align-content: stretch;
+	  		align-content: stretch;
 		}
 
-		.screenshot {
-			position: relative;
-			display:block; 
-			max-width: $image-width;
-	    	max-height: $image-height;
-		    width: auto;
-		    height: auto;
-		    margin: auto;
-		}
+		.project-block {
+			@media (max-width: 767px) {
+				padding: 3vh 2vw;
+			}
 
-		.project_title {
-			font-family: $titles;
-			color: $gray;
-			text-align: center;
+			@media (min-width: 768px) and (max-width: 991px) {
+				box-sizing: border-box;
+				padding: 3vh 2vw;
+				flex: 0 auto;
+				width: 50%;
+			}
 
-			font-size: 3.2vh;
-			margin-top: 3vh;
-			margin-bottom: 2vh;		
+			@media (min-width: 992px) {
+				box-sizing: border-box;
+				padding: 3vh 2vw;
+				flex: 0 auto;
+				width: 33.3%;
+			}
+
+			.screenshot {
+				position: relative;
+				display:block; 
+				max-width: $image-width;
+		    	max-height: $image-height;
+			    width: auto;
+			    height: auto;
+			    margin: auto;
+			}
+
+			.project_title {
+				font-family: $titles;
+				color: $gray;
+				text-align: center;
+
+				font-size: 3.2vh;
+				margin-top: 3vh;
+				margin-bottom: 2vh;		
+			}
 		}
 	}
 

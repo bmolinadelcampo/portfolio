@@ -13,7 +13,15 @@ body {
   position: fixed;
   z-index: 1;
   width: 100%;
-  background-color: #fed40a; }
+  background-color: #fed40a;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-justify-content: flex-start;
+  -justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center; }
   @media (max-width: 767px) {
     .navigation_bar {
       padding: 1.5vh 0 1.5vh 0; } }
@@ -25,8 +33,7 @@ body {
       padding: 2vh 0vw 2vh 0vw; } }
   .navigation_bar .index_button {
     font-family: "Poiret One";
-    color: #4c4c4c;
-    float: right; }
+    color: #4c4c4c; }
     @media (max-width: 767px) {
       .navigation_bar .index_button {
         padding: 0 3vw 0 3vw;
@@ -126,40 +133,60 @@ body {
       text-transform: uppercase;
       padding-bottom: 8vh;
       font-size: 4vh; }
-    .content .work .project-block {
+    @media (min-width: 768px) and (max-width: 991px) {
+      .content .work .projects {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-align-content: stretch;
+        align-content: stretch; } }
+    @media (min-width: 992px) {
+      .content .work .projects {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-align-content: stretch;
+        align-content: stretch; } }
+    @media (max-width: 767px) {
+      .content .work .projects .project-block {
+        padding: 3vh 2vw; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .content .work .projects .project-block {
+        box-sizing: border-box;
+        padding: 3vh 2vw;
+        flex: 0 auto;
+        width: 50%; } }
+    @media (min-width: 992px) {
+      .content .work .projects .project-block {
+        box-sizing: border-box;
+        padding: 3vh 2vw;
+        flex: 0 auto;
+        width: 33.3%; } }
+    .content .work .projects .project-block .screenshot {
+      position: relative;
+      display: block;
+      max-width: 203px;
+      max-height: 362px;
+      width: auto;
+      height: auto;
       margin: auto; }
-      @media (max-width: 767px) {
-        .content .work .project-block {
-          padding: 3vh 2vw; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .content .work .project-block {
-          box-sizing: border-box;
-          padding: 3vh 2vw;
-          float: left;
-          width: 50%;
-          overflow: hidden; } }
-      @media (min-width: 992px) {
-        .content .work .project-block {
-          box-sizing: border-box;
-          padding: 3vh 2vw;
-          float: left;
-          width: 33.33333%;
-          overflow: hidden; } }
-      .content .work .project-block .screenshot {
-        position: relative;
-        display: block;
-        max-width: 203px;
-        max-height: 362px;
-        width: auto;
-        height: auto;
-        margin: auto; }
-      .content .work .project-block .project_title {
-        font-family: "Poiret One";
-        color: #4c4c4c;
-        text-align: center;
-        font-size: 3.2vh;
-        margin-top: 3vh;
-        margin-bottom: 2vh; }
+    .content .work .projects .project-block .project_title {
+      font-family: "Poiret One";
+      color: #4c4c4c;
+      text-align: center;
+      font-size: 3.2vh;
+      margin-top: 3vh;
+      margin-bottom: 2vh; }
     .content .work hr {
       width: 80%;
       height: 4px;
