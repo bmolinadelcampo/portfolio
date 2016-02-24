@@ -46,66 +46,38 @@ body {
   width: 100%; }
   .content .header {
     background-color: #fed40a;
-    text-align: center; }
-    @media (max-width: 767px) {
-      .content .header {
-        padding-top: 40vh;
-        padding-bottom: 20vh;
-        min-height: 40vh; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .content .header {
-        padding-top: 40vh;
-        padding-bottom: 20vh;
-        min-height: 40vh; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .content .header {
-        padding-top: 40vh;
-        padding-bottom: 20vh;
-        min-height: 40vh; } }
+    text-align: center;
+    padding-top: 40vh;
+    padding-bottom: 20vh;
+    min-height: 40vh; }
     .content .header .name {
       white-space: nowrap;
       font-family: "Poiret One";
-      color: white; }
+      color: white;
+      margin-bottom: 7vh; }
       @media (max-width: 767px) {
         .content .header .name {
           padding-right: 6vw;
           padding-left: 6vw;
-          margin-bottom: 7vh;
           font-size: 4.5vh; } }
       @media (min-width: 768px) and (max-width: 991px) {
         .content .header .name {
           padding-right: 4vw;
           padding-left: 4vw;
-          margin-bottom: 7vh;
           font-size: 5.5vh; } }
       @media (min-width: 992px) {
         .content .header .name {
           padding-right: 4vw;
           padding-left: 4vw;
-          margin-bottom: 7vh;
           font-size: 7vh; } }
     .content .header .introduction {
       font-family: "Lora", serif;
       font-style: italic;
-      color: #4c4c4c; }
-      @media (max-width: 767px) {
-        .content .header .introduction {
-          padding-right: 8vw;
-          padding-left: 8vw;
-          font-size: 2.5vh;
-          line-height: 180%; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .content .header .introduction {
-          padding-right: 8vw;
-          padding-left: 8vw;
-          font-size: 2.5vh;
-          line-height: 180%; } }
-      @media (min-width: 992px) {
-        .content .header .introduction {
-          padding-right: 8vw;
-          padding-left: 8vw;
-          font-size: 2.5vh;
-          line-height: 180%; } }
+      color: #4c4c4c;
+      padding-right: 8vw;
+      padding-left: 8vw;
+      font-size: 2.5vh;
+      line-height: 180%; }
   @media (max-width: 767px) {
     .content .about {
       padding: 10vh 15vw 10vh 15vw;
@@ -131,21 +103,10 @@ body {
     font-family: "Lora", serif;
     font-style: normal;
     color: #4c4c4c;
-    text-align: justify; }
-    @media (max-width: 767px) {
-      .content .about p {
-        font-size: 2.5vh;
-        line-height: 180%; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      .content .about p {
-        font-size: 2.5vh;
-        line-height: 180%;
-        margin-bottom: 2vh; } }
-    @media (min-width: 992px) {
-      .content .about p {
-        font-size: 2.5vh;
-        line-height: 180%;
-        margin-bottom: 2vh; } }
+    text-align: justify;
+    font-size: 2.5vh;
+    line-height: 180%;
+    margin-bottom: 2vh; }
   .content .work {
     display: block;
     overflow-y: hidden; }
@@ -162,19 +123,9 @@ body {
       font-family: "Poiret One";
       color: #4c4c4c;
       text-align: center;
-      text-transform: uppercase; }
-      @media (max-width: 767px) {
-        .content .work h2 {
-          padding-bottom: 8vh;
-          font-size: 4vh; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .content .work h2 {
-          padding-bottom: 8vh;
-          font-size: 4vh; } }
-      @media (min-width: 992px) {
-        .content .work h2 {
-          padding-bottom: 8vh;
-          font-size: 4vh; } }
+      text-transform: uppercase;
+      padding-bottom: 8vh;
+      font-size: 4vh; }
     .content .work .project-block {
       margin: auto; }
       @media (max-width: 767px) {
@@ -189,8 +140,11 @@ body {
           overflow: hidden; } }
       @media (min-width: 992px) {
         .content .work .project-block {
+          box-sizing: border-box;
+          padding: 3vh 2vw;
           float: left;
-          width: 33.33333%; } }
+          width: 33.33333%;
+          overflow: hidden; } }
       .content .work .project-block .screenshot {
         position: relative;
         display: block;
@@ -202,22 +156,10 @@ body {
       .content .work .project-block .project_title {
         font-family: "Poiret One";
         color: #4c4c4c;
-        text-align: center; }
-        @media (max-width: 767px) {
-          .content .work .project-block .project_title {
-            font-size: 3.2vh;
-            margin-top: 3vh;
-            margin-bottom: 2vh; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          .content .work .project-block .project_title {
-            font-size: 3.2vh;
-            margin-top: 3vh;
-            margin-bottom: 2vh; } }
-        @media (min-width: 992px) {
-          .content .work .project-block .project_title {
-            font-size: 3.2vh;
-            margin-top: 3vh;
-            margin-bottom: 2vh; } }
+        text-align: center;
+        font-size: 3.2vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh; }
     .content .work hr {
       width: 80%;
       height: 4px;
@@ -233,22 +175,10 @@ body {
       margin-left: auto;
       margin-right: auto;
       color: #4c4c4c;
-      text-align: center; }
-      @media (max-width: 767px) {
-        .content .work .project_description {
-          font-size: 2.5vh;
-          line-height: 180%;
-          width: 80vw; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .content .work .project_description {
-          font-size: 2.4vh;
-          line-height: 180%;
-          width: 80%; } }
-      @media (min-width: 992px) {
-        .content .work .project_description {
-          font-size: 2.8vh;
-          line-height: 180%;
-          width: 80%; } }
+      text-align: center;
+      font-size: 2.8vh;
+      line-height: 180%;
+      width: 80%; }
   .content .contact {
     overflow: scroll;
     background-color: #4c4c4c; }
@@ -313,7 +243,7 @@ body {
         text-align: center; }
         @media (max-width: 767px) {
           .content .contact .block_inside_contact .social_media {
-            width: 18.8vw;
+            width: 18.8%;
             margin-bottom: 2vh;
             font-size: 5vh; } }
         @media (min-width: 768px) and (max-width: 991px) {
@@ -327,7 +257,7 @@ body {
             margin: 7vh 0 7vh 0;
             font-size: 5vh; } }
   .content .footer {
-    padding: 0% 4% 0% 4%;
+    padding: 0 4vw 0 4vw;
     font-family: "Poiret One";
     color: white;
     background-color: #4c4c4c;

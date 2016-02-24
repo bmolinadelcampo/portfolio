@@ -24,20 +24,8 @@ $image-height: 362px;
 		text-align: center;
 		text-transform: uppercase;
 
-		@media (max-width: 767px) {
-			padding-bottom: 8vh;
-			font-size: 4vh;
-		}
-
-		@media (min-width: 768px) and (max-width: 991px) {
-			padding-bottom: 8vh;
-			font-size: 4vh;
-		}
-
-		@media (min-width: 992px) {
-			padding-bottom: 8vh;
-			font-size: 4vh;
-		}
+		padding-bottom: 8vh;
+		font-size: 4vh;
 	} 
 
 	.project-block {
@@ -56,8 +44,11 @@ $image-height: 362px;
 		}
 
 		@media (min-width: 992px) {
+			box-sizing: border-box;
+			padding: 3vh 2vw;
 			float: left;
 			width: 1 / $number-of-columns * 100%;
+			overflow: hidden;
 		}
 
 		.screenshot {
@@ -75,25 +66,11 @@ $image-height: 362px;
 			color: $gray;
 			text-align: center;
 
-			@media (max-width: 767px) {
-				font-size: 3.2vh;
-				margin-top: 3vh;
-				margin-bottom: 2vh;
-			}	
-
-			@media (min-width: 768px) and (max-width: 991px) {
-				font-size: 3.2vh;
-				margin-top: 3vh;
-				margin-bottom: 2vh;
-			}	
-
-			@media (min-width: 992px) {
-				font-size: 3.2vh;
-				margin-top: 3vh;
-				margin-bottom: 2vh;
-			}	
+			font-size: 3.2vh;
+			margin-top: 3vh;
+			margin-bottom: 2vh;		
 		}
-		}
+	}
 
 		hr {
 			width: 80%;
@@ -114,22 +91,8 @@ $image-height: 362px;
 			color: $gray;
 			text-align: center;
 
-			@media (max-width: 767px) {
-			font-size: 2.5vh;
+			font-size: 2.8vh;
 			line-height: 180%;
-			width: 80vw;
-			}
-
-			@media (min-width: 768px) and (max-width: 991px) {
-			font-size: 2.4vh;
-			line-height: 180%;
-			width: 80%;
-			}
-
-			@media (min-width: 992px) {
-				font-size: 2.8vh;
-				line-height: 180%;
-				width: 80%;
-			}
+			width: 80%;	
 		}
 }
