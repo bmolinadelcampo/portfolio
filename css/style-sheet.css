@@ -207,8 +207,21 @@ body {
       line-height: 180%;
       width: 80%; }
   .content .contact {
-    overflow: scroll;
     background-color: #4c4c4c; }
+    @media (min-width: 768px) {
+      .content .contact {
+        display: -webkit-flex;
+        display: flex;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-align-content: stretch;
+        align-content: stretch; } }
     .content .contact .block_inside_contact {
       overflow: hidden; }
       @media (max-width: 767px) {
@@ -219,13 +232,11 @@ body {
         .content .contact .block_inside_contact {
           box-sizing: border-box;
           padding: 5vh 2vw 5vh 1vw;
-          float: left;
           width: 50%; } }
       @media (min-width: 992px) {
         .content .contact .block_inside_contact {
           box-sizing: border-box;
           padding: 5vh 2vw 5vh 5vw;
-          float: left;
           width: 50vw; } }
       .content .contact .block_inside_contact h2 {
         font-family: "Poiret One";
