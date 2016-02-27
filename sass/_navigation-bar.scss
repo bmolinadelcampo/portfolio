@@ -1,24 +1,14 @@
 @import 'fonts-and-colours';
 
 .navigation_bar {
-	overflow: hidden;
 	position: fixed;
+	width: 100vw;
 	z-index: 1;
-	width: 100%;
 	background-color: $yellow;
 
-	display: -webkit-flex;
-	display: flex;
-
-	-webkit-flex-direction: row-reverse;
-  	flex-direction: row-reverse;
-	-webkit-justify-content: flex-start;
-	-justify-content: flex-start;
-	-webkit-align-items: center;
-  	align-items: center;
 
 	@media (max-width: 767px) {
-		padding: 1.5vh 0 1.5vh 0;
+		 padding: 1.5vh 2vw 1.5vh 0; 
 	}
 
 	@media (min-width: 768px) and (max-width: 991px){
@@ -32,10 +22,10 @@
 	.index_button {
 		font-family: $titles;
 		color: $gray;
+		text-align: center;
 
 		@media (max-width: 767px) {
-			padding: 0 3vw 0 3vw;
-			font-size: 2.8vh; 
+			font-size: 1.6em; 
 		}
 
 		@media (min-width: 768px) and (max-width: 991px) {

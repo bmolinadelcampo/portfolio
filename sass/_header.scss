@@ -15,7 +15,7 @@
 		@media (max-width: 767px) {
 			padding-right: 6vw;
 			padding-left: 6vw;
-			font-size: 4.5vh;
+			font-size: 2.5em;
 		}
 
 		@media (min-width: 768px) and (max-width: 991px) {
@@ -31,14 +31,15 @@
 		}
 	}
 
+
 	.introduction {
-		font-family: $body;
+		font-family: $text;
 		font-style: italic;
 		color: $gray;
 
-		padding-right: 8vw;
-		padding-left: 8vw;
-		font-size: 2.5vh;
+		padding-right: 10vw;
+		padding-left: 10vw;
+		font-size: 1.2em;
 		line-height: 180%;
 	}
 }

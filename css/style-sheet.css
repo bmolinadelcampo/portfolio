@@ -1,17 +1,90 @@
-/*@import 'reset';
+* {
+  margin: 0;
+  padding: 0; }
 
-@import 'global';
+body {
+  font-size: 100%; }
 
-@import 'navigation-bar';
+a {
+  color: inherit;
+  text-decoration: inherit; }
 
-.content {
-	width: 100%;
+.row {
+  margin: 0px; }
 
-	@import 'header';
-	@import 'about';
-	@import 'work';
-	@import 'contact';
-	@import 'footer';
-}*/
+.container-fluid {
+  padding: 0; }
+
+.navigation_bar {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  background-color: #fed40a; }
+  @media (max-width: 767px) {
+    .navigation_bar {
+      padding: 1.5vh 2vw 1.5vh 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navigation_bar {
+      padding: 1vh 0vw 1vh 0vw; } }
+  @media (min-width: 992px) {
+    .navigation_bar {
+      padding: 2vh 0vw 2vh 0vw; } }
+  .navigation_bar .index_button {
+    font-family: "Poiret One";
+    color: #4c4c4c;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .navigation_bar .index_button {
+        font-size: 1.6em; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .navigation_bar .index_button {
+        padding: 0 3vw 0 3vw;
+        font-size: 2.8vh; } }
+    @media (min-width: 992px) {
+      .navigation_bar .index_button {
+        padding: 0 2.5vw 0 2.5vw;
+        font-size: 3.2vh; }
+        .navigation_bar .index_button a:hover {
+          color: white; } }
+
+.header {
+  background-color: #fed40a;
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 20vh;
+  min-height: 40vh; }
+  .header .name {
+    white-space: nowrap;
+    font-family: "Poiret One";
+    color: white;
+    margin-bottom: 7vh; }
+    @media (max-width: 767px) {
+      .header .name {
+        padding-right: 6vw;
+        padding-left: 6vw;
+        font-size: 2.5em; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .header .name {
+        padding-right: 4vw;
+        padding-left: 4vw;
+        font-size: 5.5vh; } }
+    @media (min-width: 992px) {
+      .header .name {
+        padding-right: 4vw;
+        padding-left: 4vw;
+        font-size: 7vh; } }
+  .header .introduction {
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: #4c4c4c;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    font-size: 1.2em;
+    line-height: 180%; }
+
+/*@import 'about';*/
+/*@import 'work';*/
+/*@import 'contact';*/
+/*@import 'footer';*/
 
 /*# sourceMappingURL=style-sheet.css.map */
